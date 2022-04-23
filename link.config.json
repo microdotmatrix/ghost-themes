@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "../ghost/content/themes/ggslayley",
+    "../ghost-themes/packages/ggslayley"
+  ]
+}

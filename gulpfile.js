@@ -234,11 +234,10 @@ function zipper(done) {
         src([
             '**',
             '!node_modules', '!node_modules/**',
-            '!dist', '!dist/**',
             '!yarn-error.log'
         ], {cwd: `./packages/${argv.theme}`}),
         zip(filename),
-        dest(`packages/${argv.theme}/dist/`)
+        dest(`packages/${argv.theme}/zip/`)
     ], handleError(done));
 }
 
@@ -246,5 +245,5 @@ exports.lint = lint;
 exports.symlink = symlink;
 exports.test = test;
 exports.testCI = testCI;
-exports.zip = series(build, zipper);
+exports.zip = series(zipper);
 exports.default = main;

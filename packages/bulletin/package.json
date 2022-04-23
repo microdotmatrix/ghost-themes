@@ -42,17 +42,27 @@
         "custom": {
             "title_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "body_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Elegant serif"
             },
             "feature_image_width": {
                 "type": "select",
-                "options": ["Full", "Wide", "Small"],
+                "options": [
+                    "Full",
+                    "Wide",
+                    "Small"
+                ],
                 "default": "Small",
                 "group": "post"
             }

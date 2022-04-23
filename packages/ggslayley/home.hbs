@@ -1,0 +1,27 @@
+{{!< default}}
+
+<section class="{{page_class}}">
+  {{> "heros/home"}}
+</section>
+
+<section id="home" class="xc-page">
+    <div class="xc-page__content">
+
+      {{#page}}
+        {{content}}
+      {{/page}}
+
+      <div class="xc-postfeed">
+        {{#get "posts" limit="6"}}
+          {{#foreach posts}}
+
+              {{> "cards/post"}} {{!-- partials/card.hbs --}}
+
+          {{/foreach}}
+        {{/get}}
+      </div>
+
+    </div>
+</section>
+
+{{> "shop/shopify"}}
